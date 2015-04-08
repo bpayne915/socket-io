@@ -12,3 +12,7 @@
 	right: 10px;
 	position: absolute;
 }
+
+fieldset{
+	width: 1000px;
+}
