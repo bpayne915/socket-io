@@ -13,3 +13,16 @@
 .ng-valid.ng-dirty {
 	border-color: #78FA89;
 }
+
+#logo {
+	width: 75%;
+}
+
+.navbar-header {
+	height: 100px;
+	padding-bottom: 40px;
+}
+
+.navbar-nav {
+	margin-top: 30px;
+}

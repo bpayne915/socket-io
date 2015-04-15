@@ -1408,6 +1408,7 @@ a.bg-danger:hover {
   padding-bottom: 9px;
   margin: 40px 0 20px;
   border-bottom: 1px solid #eee;
+  margin-top: 90px;
 }
 ul,
 ol {
@@ -4223,6 +4224,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar-toggle {
     display: none;
+    margin-top: 30px;
   }
 }
 .navbar-nav {
@@ -4860,7 +4862,7 @@ a.badge:focus {
 }
 .jumbotron {
   padding: 30px 15px;
-  margin-top: 50px;
+  margin-top: 120px;
   margin-bottom: 30px;
   color: inherit;
   background-color: #fff;
