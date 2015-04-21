@@ -1090,7 +1090,8 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #4e5f6f;
+  background-image: url("blurred.jpg");
+
   letter-spacing: 0.08em;
 }
 input,
@@ -2625,6 +2626,9 @@ input[type="search"] {
 }
 .form-group {
   margin-bottom: 15px;
+  width: 330px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .radio,
 .checkbox {
@@ -2966,8 +2970,8 @@ select[multiple].form-group-lg .form-control {
   min-height: 27px;
 }
 .form-horizontal .form-group {
-  margin-right: -15px;
-  margin-left: -15px;
+  /*margin-right: -15px;
+  margin-left: -15px;*/
 }
 @media (min-width: 768px) {
   .form-horizontal .control-label {
@@ -2991,21 +2995,23 @@ select[multiple].form-group-lg .form-control {
 }
 .btn {
   display: inline-block;
-  padding: 6px 12px;
+  width: 330px;
+  padding: 12px 12px;
   margin-bottom: 0;
-  font-size: 14px;
+  letter-spacing: 0.1em;
+  font-size: 17px;
   font-weight: normal;
   line-height: 1.42857143;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  touch-action: manipulation;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -3090,8 +3096,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #379dcf;
+  /*border-color: #2e6da4;*/
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -3100,8 +3106,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  /*background-color: #286090;*/
+  /*border-color: #204d74;*/
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3126,8 +3132,8 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  /*background-color: #337ab7;*/
+  /*border-color: #2e6da4;*/
 }
 .btn-primary .badge {
   color: #337ab7;
@@ -4229,6 +4235,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-nav {
   margin: 7.5px -15px;
+  margin-top: 30px;
+  background-color: #fff;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -4262,6 +4270,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-nav {
     float: left;
     margin: 0;
+    margin-top: 30px;
+    border-radius: 3px;
   }
   .navbar-nav > li {
     float: left;
@@ -4496,8 +4506,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #4e5f6f;
-  border-color: #969EA1;
+  background-color: rgba(255, 255, 255, 0.43);
+  border-color: rgba(255, 255, 255, 0.4);
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
@@ -4517,13 +4527,13 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-nav > li > a:focus {
   cursor: pointer;
   color: #fff;
-  background-color: transparent;
+  background-color: #379dcf;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #fff;
-  background-color: #69777c;
+  background-color: #379dcf;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
@@ -4549,7 +4559,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
   color: #fff;
-  background-color: #69777c;
+  background-color: #379dcf;
 }
 @media (max-width: 767px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
@@ -4860,21 +4870,25 @@ a.badge:focus {
 .nav-pills > li > a > .badge {
   margin-left: 3px;
 }
+
 .jumbotron {
   padding: 30px 15px;
   margin-top: 120px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #fff;
+  /*background-color: #fff;*/
 }
+
 .jumbotron h1,
 .jumbotron .h1 {
-  color: inherit;
+  color: #cccccc;
 }
 .jumbotron p {
   margin-bottom: 15px;
   font-size: 21px;
   font-weight: 200;
+  color: #cccccc;
+
 }
 .jumbotron > hr {
   border-top-color: #d5d5d5;
@@ -4886,6 +4900,14 @@ a.badge:focus {
 .jumbotron .container {
   max-width: 100%;
 }
+.jumbotron #instashare {
+  max-width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+
 @media screen and (min-width: 768px) {
   .jumbotron {
     padding: 48px 0;

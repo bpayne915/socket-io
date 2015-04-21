@@ -1,6 +1,5 @@
 'use strict';
 
-//note addition of $http
 angular.module('photos').controller('PhotosController', ['$scope', '$stateParams', '$http', '$location', 'Authentication', 'Photos',  
 	function($scope, $stateParams, $http, $location, Authentication, Photos) {
 	  $scope.authentication = Authentication;
