@@ -1091,7 +1091,8 @@ body {
   line-height: 1.42857143;
   color: #333;
   background-image: url("blurred.jpg");
-
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   letter-spacing: 0.08em;
 }
 input,
@@ -1276,11 +1277,13 @@ h1,
 }
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 15px;
 }
 h3,
 .h3 {
   font-size: 24px;
+  margin-left: 60px;
+  margin-bottom: 20px;
 }
 h4,
 .h4 {
@@ -1302,6 +1305,7 @@ p {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.4;
+  color: #CCC;
 }
 @media (min-width: 768px) {
   .lead {
@@ -1342,7 +1346,7 @@ mark,
   text-transform: capitalize;
 }
 .text-muted {
-  color: #777;
+  color: #CCC;
 }
 .text-primary {
   color: #337ab7;
@@ -1409,7 +1413,7 @@ a.bg-danger:hover {
   padding-bottom: 9px;
   margin: 40px 0 20px;
   border-bottom: 1px solid #eee;
-  margin-top: 90px;
+  /*margin-top: 90px;*/
 }
 ul,
 ol {
@@ -2993,6 +2997,7 @@ select[multiple].form-group-lg .form-control {
     padding-top: 6px;
   }
 }
+
 .btn {
   display: inline-block;
   width: 330px;
@@ -3094,10 +3099,16 @@ fieldset[disabled] .btn-default.active {
   color: #fff;
   background-color: #333;
 }
+#edit_button {
+  width: 50px;
+}
+#delete_button {
+  width: 50px;
+}
 .btn-primary {
   color: #fff;
   background-color: #379dcf;
-  /*border-color: #2e6da4;*/
+  border-color: rgba(255, 255, 255, 0.15);
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -4080,6 +4091,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
+  margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   .navbar {
@@ -4506,8 +4518,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: rgba(255, 255, 255, 0.43);
-  border-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.43);
+  border-color: rgba(0, 0, 0, 0.4);
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
