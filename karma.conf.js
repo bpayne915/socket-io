@@ -49,4 +49,4 @@ module.exports = function(config) {
 		// If true, it capture browsers, run tests and exit
 		singleRun: true
 	});
-};
+}; 
